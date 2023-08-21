@@ -53,11 +53,25 @@ public class MySinglyLinkedList {
             // move forward the elements of the list
             prev=current;
             current=current.next;
-
         }
-
-
     }
+
+
+    int indexOf(int id){
+        if (isEmpty()) return -1;
+
+        int position=0;
+
+        // iterate through the list
+        Node current = head; // set my current with the starting element
+        while (current!=null){
+            if (current.id==id) return position;
+                position++;
+                current=current.next;
+        }
+        return -1;
+    }
+
 
 
     void printNodes(){
