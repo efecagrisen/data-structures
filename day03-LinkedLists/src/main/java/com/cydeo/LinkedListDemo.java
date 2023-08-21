@@ -1,5 +1,7 @@
 package com.cydeo;
 
+import java.util.ArrayList;
+
 public class LinkedListDemo {
     public static void main(String[] args) {
 
@@ -24,7 +26,5 @@ public class LinkedListDemo {
             System.out.println("Id of node is: " + current.id);
             current=current.next;
         }
-
-
     }
 }
