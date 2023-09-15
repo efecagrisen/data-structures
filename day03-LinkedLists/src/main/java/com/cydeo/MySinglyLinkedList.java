@@ -86,8 +86,7 @@ public class MySinglyLinkedList {
 
 
     int findKthFromLast(int k){
-        // todo complete the method by using two pointer approach
-
+        //24:00
         return 0;
     }
 
