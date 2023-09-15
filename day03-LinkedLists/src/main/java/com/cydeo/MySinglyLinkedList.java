@@ -56,7 +56,6 @@ public class MySinglyLinkedList {
         }
     }
 
-
     int indexOf(int id){
         if (isEmpty()) return -1;
 
@@ -72,6 +71,25 @@ public class MySinglyLinkedList {
         return -1;
     }
 
+    void addFirst(int data){
+        // create a new node object from data
+        Node node = new Node(data);
+        if (isEmpty()){ //if the list is empty
+            head=tail=node;
+
+        }else{ // if there are elements in the list
+            node.next = head;
+            head=node;
+        }
+        size++;
+    }
+
+
+    int findKthFromLast(int k){
+        // todo complete the method by using two pointer approach
+
+        return 0;
+    }
 
 
     void printNodes(){
